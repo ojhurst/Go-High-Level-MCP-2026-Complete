@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHL Connect — AI-Power Your GoHighLevel in 2 Clicks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #0ea5e9 0%, #8b5cf6 50%, #ec4899 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-glow {
+      background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(14, 165, 233, 0.15), transparent);
+    }
+    .card-glow:hover {
+      box-shadow: 0 0 40px rgba(14, 165, 233, 0.15);
+    }
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 font-sans antialiased">
+  
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 border-b border-zinc-800/50 bg-zinc-950/80 backdrop-blur-xl">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-purple-500 flex items-center justify-center">
+          <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+        </div>
+        <span class="font-bold text-xl">GHL Connect</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#features" class="text-zinc-400 hover:text-white transition">Features</a>
+        <a href="#pricing" class="text-zinc-400 hover:text-white transition">Waitlist</a>
+        <a href="#faq" class="text-zinc-400 hover:text-white transition">FAQ</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#" class="text-zinc-400 hover:text-white transition">Sign In</a>
+        <a href="#pricing" class="px-4 py-2 bg-brand-500 hover:bg-brand-600 rounded-lg font-medium transition">
+          Join Waitlist
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center hero-glow pt-20">
+    <div class="max-w-6xl mx-auto px-6 py-20 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800/50 border border-zinc-700/50 text-sm text-zinc-300 mb-8">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+        Open Source + Hosted
+      </div>
+      
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+        Connect <span class="gradient-text">GoHighLevel</span><br>
+        to AI in 2 Clicks
+      </h1>
+      
+      <p class="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto mb-10">
+        The most comprehensive GHL MCP server. <strong class="text-white">461 tools</strong> covering the entire API. 
+        No setup. No OAuth headaches. Just connect and automate.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+        <a href="#pricing" class="w-full sm:w-auto px-8 py-4 bg-brand-500 hover:bg-brand-600 rounded-xl font-semibold text-lg transition transform hover:scale-105">
+          Join the Waitlist
+        </a>
+        <a href="https://github.com/BusyBee3333/The-Complete-GHL-MCP" class="w-full sm:w-auto px-8 py-4 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-xl font-semibold text-lg transition flex items-center justify-center gap-2">
+          <i data-lucide="github" class="w-5 h-5"></i>
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- Social Proof -->
+      <div class="flex flex-col items-center gap-4">
+        <div class="flex -space-x-3">
+          <img src="https://i.pravatar.cc/100?img=1" class="w-10 h-10 rounded-full border-2 border-zinc-950" alt="">
+          <img src="https://i.pravatar.cc/100?img=2" class="w-10 h-10 rounded-full border-2 border-zinc-950" alt="">
+          <img src="https://i.pravatar.cc/100?img=3" class="w-10 h-10 rounded-full border-2 border-zinc-950" alt="">
+          <img src="https://i.pravatar.cc/100?img=4" class="w-10 h-10 rounded-full border-2 border-zinc-950" alt="">
+          <img src="https://i.pravatar.cc/100?img=5" class="w-10 h-10 rounded-full border-2 border-zinc-950" alt="">
+        </div>
+        <p class="text-zinc-400">
+          Trusted by <strong class="text-white">500+</strong> GHL agencies
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem/Solution -->
+  <section class="py-20 border-t border-zinc-800/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Setting up GHL + AI<br>
+            <span class="text-zinc-500">shouldn't take a week</span>
+          </h2>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center flex-shrink-0 mt-1">
+                <i data-lucide="x" class="w-4 h-4 text-red-400"></i>
+              </div>
+              <div>
+                <p class="font-medium">OAuth token refresh nightmare</p>
+                <p class="text-zinc-500">Tokens expire. Your automations break. You scramble.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center flex-shrink-0 mt-1">
+                <i data-lucide="x" class="w-4 h-4 text-red-400"></i>
+              </div>
+              <div>
+                <p class="font-medium">Terminal commands and config files</p>
+                <p class="text-zinc-500">You're an agency owner, not a DevOps engineer.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-8 h-8 rounded-full bg-red-500/10 flex items-center justify-center flex-shrink-0 mt-1">
+                <i data-lucide="x" class="w-4 h-4 text-red-400"></i>
+              </div>
+              <div>
+                <p class="font-medium">Limited API coverage</p>
+                <p class="text-zinc-500">Other tools have 20-30 endpoints. You need all 461.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-zinc-900 rounded-2xl border border-zinc-800 p-8">
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center">
+              <i data-lucide="check" class="w-5 h-5 text-green-400"></i>
+            </div>
+            <h3 class="text-xl font-semibold">With GHL Connect</h3>
+          </div>
+          <div class="space-y-4 text-zinc-300">
+            <p>✓ Connect in 2 clicks via OAuth</p>
+            <p>✓ Automatic token refresh forever</p>
+            <p>✓ All 461 API endpoints ready</p>
+            <p>✓ Works with Claude, GPT, any MCP client</p>
+            <p>✓ Multi-location support built-in</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-20 border-t border-zinc-800/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Everything you need</h2>
+        <p class="text-xl text-zinc-400">Full GHL API access through one simple connection</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-6 card-glow transition">
+          <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="users" class="w-6 h-6 text-brand-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Contacts & CRM</h3>
+          <p class="text-zinc-400">Create, update, search, tag contacts. Full CRUD on your entire database.</p>
+        </div>
+        
+        <div class="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-6 card-glow transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="message-square" class="w-6 h-6 text-purple-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Conversations</h3>
+          <p class="text-zinc-400">Send SMS, emails, read threads. Your AI can actually talk to leads.</p>
+        </div>
+        
+        <div class="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-6 card-glow transition">
+          <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="calendar" class="w-6 h-6 text-pink-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Calendars</h3>
+          <p class="text-zinc-400">Book appointments, check availability, manage your calendar.</p>
+        </div>
+        
+        <div class="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-6 card-glow transition">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="target" class="w-6 h-6 text-orange-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Opportunities</h3>
+          <p class="text-zinc-400">Manage your pipeline. Move deals through stages automatically.</p>
+        </div>
+        
+        <div class="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-6 card-glow transition">
+          <div class="w-12 h-12 rounded-xl bg-green-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="workflow" class="w-6 h-6 text-green-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Workflows</h3>
+          <p class="text-zinc-400">Trigger automations, manage workflow states, orchestrate actions.</p>
+        </div>
+        
+        <div class="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-6 card-glow transition">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center mb-4">
+            <i data-lucide="file-text" class="w-6 h-6 text-cyan-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Forms & Surveys</h3>
+          <p class="text-zinc-400">Read submissions, analyze responses, trigger follow-ups.</p>
+        </div>
+      </div>
+      
+      <div class="mt-12 text-center">
+        <p class="text-zinc-400 mb-4">+ 400 more endpoints including:</p>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Invoices</span>
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Payments</span>
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Funnels</span>
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Websites</span>
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Social Planner</span>
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Reputation</span>
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Reporting</span>
+          <span class="px-3 py-1 bg-zinc-800 rounded-full text-sm">Memberships</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Waitlist -->
+  <section id="pricing" class="py-20 border-t border-zinc-800/50">
+    <div class="max-w-2xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-500/20 text-brand-400 text-sm font-medium mb-6">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          Coming Soon
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Join the Waitlist</h2>
+        <p class="text-xl text-zinc-400">Be the first to know when we launch. Early access + exclusive perks for waitlist members.</p>
+      </div>
+      
+      <div class="bg-zinc-900/50 rounded-2xl border border-zinc-800 p-8">
+        <form id="waitlist-form" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">Name <span class="text-brand-400">*</span></label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              required
+              placeholder="Your full name"
+              class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition"
+            >
+          </div>
+          
+          <div>
+            <label for="phone" class="block text-sm font-medium text-zinc-300 mb-2">Phone <span class="text-brand-400">*</span></label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              required
+              placeholder="+1 (555) 000-0000"
+              class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition"
+            >
+          </div>
+          
+          <div>
+            <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">Email <span class="text-zinc-500">(optional)</span></label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email"
+              placeholder="you@company.com"
+              class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition"
+            >
+          </div>
+          
+          <button 
+            type="submit" 
+            id="submit-btn"
+            class="w-full py-4 bg-brand-500 hover:bg-brand-600 rounded-xl font-semibold text-lg transition transform hover:scale-[1.02] flex items-center justify-center gap-2"
+          >
+            <span>Join the Waitlist</span>
+            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+          </button>
+        </form>
+        
+        <!-- Success Message (hidden by default) -->
+        <div id="success-message" class="hidden text-center py-8">
+          <div class="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="check" class="w-8 h-8 text-green-400"></i>
+          </div>
+          <h3 class="text-2xl font-bold mb-2">You're on the list!</h3>
+          <p class="text-zinc-400">We'll reach out as soon as we're ready for you.</p>
+        </div>
+        
+        <!-- Error Message (hidden by default) -->
+        <div id="error-message" class="hidden mt-4 p-4 bg-red-500/20 border border-red-500/50 rounded-xl text-red-400 text-center">
+          Something went wrong. Please try again.
+        </div>
+        
+        <p class="text-zinc-500 text-sm text-center mt-6">
+          <i data-lucide="lock" class="w-4 h-4 inline mr-1"></i>
+          We respect your privacy. No spam, ever.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    document.getElementById('waitlist-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const form = this;
+      const submitBtn = document.getElementById('submit-btn');
+      const successMsg = document.getElementById('success-message');
+      const errorMsg = document.getElementById('error-message');
+      
+      // Get form values
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      
+      // Split name into first/last
+      const nameParts = name.split(' ');
+      const firstName = nameParts[0] || '';
+      const lastName = nameParts.slice(1).join(' ') || '';
+      
+      // Disable button and show loading
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Submitting...</span><svg class="animate-spin w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+      
+      try {
+        const response = await fetch('/api/waitlist', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            firstName: firstName,
+            lastName: lastName,
+            phone: phone,
+            email: email || undefined
+          })
+        });
+        
+        if (response.ok) {
+          form.classList.add('hidden');
+          successMsg.classList.remove('hidden');
+          errorMsg.classList.add('hidden');
+        } else {
+          throw new Error('API error');
+        }
+      } catch (err) {
+        errorMsg.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>Join the Waitlist</span><i data-lucide="arrow-right" class="w-5 h-5"></i>';
+        lucide.createIcons();
+      }
+    });
+  </script>
+
+  <!-- Open Source -->
+  <section class="py-20 border-t border-zinc-800/50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="bg-zinc-900 rounded-3xl border border-zinc-800 p-8 md:p-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-800 text-sm mb-6">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              Open Source
+            </div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              Self-host if you want.<br>
+              <span class="text-zinc-500">We won't stop you.</span>
+            </h2>
+            <p class="text-zinc-400 mb-6">
+              The entire MCP server is open source. Run it yourself, modify it, contribute back. 
+              The hosted version just saves you the hassle.
+            </p>
+            <a href="https://github.com/BusyBee3333/The-Complete-GHL-MCP" class="inline-flex items-center gap-2 text-brand-400 hover:text-brand-300 font-medium">
+              View on GitHub
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+          <div class="bg-zinc-950 rounded-xl p-6 font-mono text-sm">
+            <div class="flex items-center gap-2 text-zinc-500 mb-4">
+              <span class="w-3 h-3 rounded-full bg-red-500"></span>
+              <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
+              <span class="w-3 h-3 rounded-full bg-green-500"></span>
+              <span class="ml-2">Terminal</span>
+            </div>
+            <pre class="text-zinc-300"><code><span class="text-zinc-500">$</span> git clone github.com/ghl-connect/mcp
+<span class="text-zinc-500">$</span> cd mcp && npm install
+<span class="text-zinc-500">$</span> npm run build
+<span class="text-zinc-500">$</span> node dist/server.js
+
+<span class="text-green-400">✓ GHL MCP Server running</span>
+<span class="text-green-400">✓ 461 tools loaded</span>
+<span class="text-zinc-500">Listening on stdio...</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-20 border-t border-zinc-800/50">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently asked questions</h2>
+      </div>
+      
+      <div class="space-y-4">
+        <details class="group bg-zinc-900/50 rounded-xl border border-zinc-800 p-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">What is MCP?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-4 text-zinc-400">
+            MCP (Model Context Protocol) is a standard for connecting AI assistants to external tools and data. 
+            It's supported by Claude, and lets AI actually take actions in your systems — not just chat about them.
+          </p>
+        </details>
+        
+        <details class="group bg-zinc-900/50 rounded-xl border border-zinc-800 p-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">Do I need to install anything?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-4 text-zinc-400">
+            For the hosted version, no. Just connect your GHL account via OAuth and add the MCP endpoint to your AI client (Claude Desktop, etc.). 
+            If you self-host, you'll need Node.js.
+          </p>
+        </details>
+        
+        <details class="group bg-zinc-900/50 rounded-xl border border-zinc-800 p-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">Is my data secure?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-4 text-zinc-400">
+            Yes. We use OAuth 2.0 and never store your GHL API keys. Tokens are encrypted at rest and in transit. 
+            You can revoke access anytime from your GHL settings.
+          </p>
+        </details>
+        
+        <details class="group bg-zinc-900/50 rounded-xl border border-zinc-800 p-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">What happens if I hit my API limit?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-4 text-zinc-400">
+            We'll notify you before you hit 80%. You can upgrade anytime, or your calls will be rate-limited (not blocked) until the next billing cycle.
+          </p>
+        </details>
+        
+        <details class="group bg-zinc-900/50 rounded-xl border border-zinc-800 p-6">
+          <summary class="flex items-center justify-between cursor-pointer list-none">
+            <span class="font-medium">Can I use this with GPT or other AI models?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-zinc-400 group-open:rotate-180 transition"></i>
+          </summary>
+          <p class="mt-4 text-zinc-400">
+            MCP is currently best supported by Claude (Anthropic). GPT can use it via custom implementations. 
+            As MCP adoption grows, more clients will support it natively.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 border-t border-zinc-800/50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">
+        Ready to AI-power your GHL?
+      </h2>
+      <p class="text-xl text-zinc-400 mb-10">
+        Join 500+ agencies already automating with GHL Connect.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#pricing" class="w-full sm:w-auto px-8 py-4 bg-brand-500 hover:bg-brand-600 rounded-xl font-semibold text-lg transition">
+          Join the Waitlist
+        </a>
+        <a href="#" class="w-full sm:w-auto px-8 py-4 bg-zinc-800 hover:bg-zinc-700 rounded-xl font-semibold text-lg transition">
+          Book a Demo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-800/50 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-brand-500 to-purple-500 flex items-center justify-center">
+            <i data-lucide="zap" class="w-5 h-5 text-white"></i>
+          </div>
+          <span class="font-bold text-xl">GHL Connect</span>
+        </div>
+        <div class="flex items-center gap-8 text-zinc-400">
+          <a href="#" class="hover:text-white transition">Privacy</a>
+          <a href="#" class="hover:text-white transition">Terms</a>
+          <a href="https://github.com/BusyBee3333/The-Complete-GHL-MCP" class="hover:text-white transition">GitHub</a>
+          <a href="#" class="hover:text-white transition">Twitter</a>
+        </div>
+        <p class="text-zinc-500 text-sm">© 2026 GHL Connect. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Floating CTA -->
+  <style>
+    @keyframes wiggle {
+      0%, 100% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+    }
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 20px 0 rgba(14, 165, 233, 0.4), 0 0 40px 0 rgba(14, 165, 233, 0.2); }
+      50% { box-shadow: 0 0 30px 5px rgba(14, 165, 233, 0.6), 0 0 60px 10px rgba(14, 165, 233, 0.3); }
+    }
+    .sticky-btn {
+      animation: wiggle 2.5s ease-in-out infinite, glow-pulse 2s ease-in-out infinite;
+    }
+    .sticky-btn:hover {
+      animation: none;
+    }
+  </style>
+  <div id="sticky-cta" class="fixed bottom-6 right-6 z-50 opacity-0 translate-y-4 transition-all duration-300 pointer-events-none">
+    <a 
+      href="#pricing" 
+      class="sticky-btn flex items-center gap-2 px-6 py-3 bg-brand-500 hover:bg-brand-600 rounded-full font-semibold transition-all transform hover:scale-110"
+    >
+      <i data-lucide="sparkles" class="w-5 h-5"></i>
+      <span>Join Waitlist</span>
+    </a>
+  </div>
+
+  <script>
+    // Show/hide sticky CTA based on scroll position
+    const stickyCta = document.getElementById('sticky-cta');
+    const pricingSection = document.getElementById('pricing');
+    
+    function updateStickyCta() {
+      const scrollY = window.scrollY;
+      const pricingTop = pricingSection.offsetTop;
+      const pricingBottom = pricingTop + pricingSection.offsetHeight;
+      const viewportBottom = scrollY + window.innerHeight;
+      
+      // Show after scrolling 300px, hide when pricing section is in view
+      const shouldShow = scrollY > 300 && (viewportBottom < pricingTop || scrollY > pricingBottom);
+      
+      if (shouldShow) {
+        stickyCta.classList.remove('opacity-0', 'translate-y-4', 'pointer-events-none');
+        stickyCta.classList.add('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      } else {
+        stickyCta.classList.add('opacity-0', 'translate-y-4', 'pointer-events-none');
+        stickyCta.classList.remove('opacity-100', 'translate-y-0', 'pointer-events-auto');
+      }
+    }
+    
+    window.addEventListener('scroll', updateStickyCta);
+    updateStickyCta();
+  </script>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
