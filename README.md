@@ -8,7 +8,7 @@
 
 **Original Creator:** [@mastanley13](https://github.com/mastanley13) — Built the foundation for this MCP server.
 
-**Extended by:** [@BusyBee3333](https://github.com/BusyBee3333) — Expanded to 460+ tools covering the entire GHL API.
+**Extended by:** [@BusyBee3333](https://github.com/BusyBee3333) — Expanded to 520+ tools covering the entire GHL API.
 
 ---
 
@@ -194,7 +194,7 @@ mcporter call ghl-mcp search_contacts --params '{"query": "test"}'
 
 ---
 
-> **🔥 Transform Claude Desktop into a complete GoHighLevel CRM powerhouse with 460+ powerful tools across 38+ categories**
+> **🔥 Transform Claude Desktop into a complete GoHighLevel CRM powerhouse with 520+ powerful tools across 40+ categories**
 
 ## 🎯 What This Does
 
@@ -206,6 +206,10 @@ This comprehensive MCP (Model Context Protocol) server connects Claude Desktop d
 - **💰 Sales & Revenue**: Opportunities, payments, invoices, estimates, and billing automation
 - **📱 Marketing Automation**: Social media, email campaigns, blog management, and media library
 - **🛒 E-commerce**: Store management, products, inventory, shipping, and order fulfillment
+- **🎙️ Voice AI**: 11 tools for managing voice AI agents, actions, and call logs
+- **📄 Proposals & Documents**: 4 tools for document/contract automation and templates
+- **🏪 Marketplace**: 7 tools for app installations and billing management
+- **📋 Custom Menus**: 5 tools for white-label menu customization
 
 ## ⚡ Quick Deploy Options
 
@@ -232,7 +236,7 @@ This comprehensive MCP (Model Context Protocol) server connects Claude Desktop d
 - ✅ Auto-deploy from GitHub
 - ✅ Built-in SSL
 
-## 🌟 Complete Tool Catalog (461 Tools)
+## 🌟 Complete Tool Catalog (520+ Tools)
 
 ### 🎯 Contact Management (31 Tools)
 **Core Operations:**
@@ -432,6 +436,41 @@ This comprehensive MCP (Model Context Protocol) server connects Claude Desktop d
 **Estimate Templates:**
 - `list_estimate_templates`, `create_estimate_template`, `update_estimate_template`
 - `delete_estimate_template`, `preview_estimate_template`
+
+### 🎙️ Voice AI (11 Tools)
+**Agent Management:**
+- `list_voice_ai_agents`, `create_voice_ai_agent`, `get_voice_ai_agent`
+- `update_voice_ai_agent`, `delete_voice_ai_agent`
+
+**Actions:**
+- `create_voice_ai_action`, `get_voice_ai_action`, `update_voice_ai_action`, `delete_voice_ai_action`
+
+**Call Logs:**
+- `list_voice_ai_call_logs`, `get_voice_ai_call_log`
+
+### 📄 Proposals & Documents (4 Tools)
+- `list_proposals_documents`, `send_proposal_document`
+- `list_proposal_templates`, `send_proposal_template`
+
+### 📋 Custom Menus (5 Tools)
+- `list_custom_menus`, `create_custom_menu`, `get_custom_menu`
+- `update_custom_menu`, `delete_custom_menu`
+
+### 🏪 Marketplace & Billing (7 Tools)
+**App Installations:**
+- `list_marketplace_installations`, `delete_marketplace_installation`
+
+**Billing Charges:**
+- `list_billing_charges`, `create_billing_charge`, `check_billing_funds`
+- `get_billing_charge`, `delete_billing_charge`
+
+### 📞 Phone System (2 Tools)
+- `list_number_pools`, `list_active_numbers_by_location`
+
+### 🔧 Workflow Builder (7 Tools)
+- `ghl_create_workflow`, `ghl_list_workflows_full`, `ghl_get_workflow_full`
+- `ghl_update_workflow_actions`, `ghl_delete_workflow`
+- `ghl_publish_workflow`, `ghl_clone_workflow`
 
 ## 🎮 Claude Desktop Usage Examples
 
@@ -854,7 +893,7 @@ This project is licensed under the **ISC License** - see the [LICENSE](LICENSE) 
 
 This comprehensive MCP server delivers:
 
-### ✅ **460+ Operational Tools** across 38 categories
+### ✅ **520+ Operational Tools** across 40 categories
 ### ✅ **Real-time GoHighLevel Integration** with full API coverage
 ### ✅ **Production-Ready Deployment** on multiple platforms
 ### ✅ **Enterprise-Grade Architecture** with comprehensive error handling
