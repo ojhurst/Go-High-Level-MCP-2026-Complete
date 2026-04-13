@@ -807,7 +807,7 @@ const CalendarView: ComponentFn = (props) => {
         const day = d.getDate();
         (eventsByDay[day] = eventsByDay[day] || []).push(evt);
       }
-    } catch { /* skip */ }
+    } catch (e) { console.warn('[GHL-MCP] Event parse failed:', e); }
   }
 
   const defaultColors: Record<string, string> = {

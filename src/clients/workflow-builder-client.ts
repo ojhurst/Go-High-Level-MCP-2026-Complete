@@ -284,7 +284,8 @@ export class WorkflowBuilderClient {
     let data: T;
     try {
       data = JSON.parse(text);
-    } catch {
+    } catch (e) {
+      console.warn('[GHL-MCP] Response was not JSON, using raw text');
       data = text as unknown as T;
     }
 

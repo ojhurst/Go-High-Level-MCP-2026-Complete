@@ -242,7 +242,7 @@ async function main() {
       await transport.handleRequest(req, res, req.body);
       // Clean up after the response finishes
       res.on('close', () => {
-        server.close().catch(() => {});
+        server.close().catch((e) => { console.error('[GHL-MCP] Server close failed:', e); });
       });
     } catch (err: any) {
       log('error', 'Streamable HTTP error', { error: err.message });
@@ -455,7 +455,7 @@ async function main() {
                 const parsed = JSON.parse(c.text);
                 if (parsed.root && parsed.elements) uiTree = parsed;
                 else if (parsed.uiTree?.root) uiTree = parsed.uiTree;
-              } catch {}
+              } catch (e) { console.warn('[GHL-MCP] JSON parse failed:', e); }
             }
           }
         }
@@ -469,7 +469,7 @@ async function main() {
                 const parsed = JSON.parse(c.text);
                 if (parsed.root && parsed.elements) uiTree = parsed;
                 else if (parsed.uiTree?.root) uiTree = parsed.uiTree;
-              } catch {}
+              } catch (e) { console.warn('[GHL-MCP] JSON parse failed:', e); }
             }
           }
         }

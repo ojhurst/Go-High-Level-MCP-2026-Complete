@@ -1309,7 +1309,7 @@ const d=window.__MCP_APP_DATA__;if(d){document.querySelector('.fallback').innerH
       const conversations = resp.data?.conversations || [];
       let messages: any[] = [];
       if (conversations[0]?.id) {
-        const msgResp = await this.ghlClient.getConversationMessages(conversations[0].id, { limit: 15 }).catch(() => ({ data: { messages: [] } }));
+        const msgResp = await this.ghlClient.getConversationMessages(conversations[0].id, { limit: 15 }).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: { messages: [] } }; });
         messages = (msgResp as any).data?.messages || [];
       }
       const uiTree = buildConversationInboxTree({ conversations, messages });
@@ -1323,8 +1323,8 @@ const d=window.__MCP_APP_DATA__;if(d){document.querySelector('.fallback').innerH
   private async viewPhoneLog(): Promise<AppToolResult> {
     try {
       const locationId = this.ghlClient.getConfig().locationId;
-      const callsResp = await this.ghlClient.makeRequest('GET', `/phone/calls?locationId=${locationId}&limit=50`).catch(() => ({ data: null }));
-      const numbersResp = await this.ghlClient.makeRequest('GET', `/phone/numbers?locationId=${locationId}`).catch(() => ({ data: null }));
+      const callsResp = await this.ghlClient.makeRequest('GET', `/phone/calls?locationId=${locationId}&limit=50`).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; });
+      const numbersResp = await this.ghlClient.makeRequest('GET', `/phone/numbers?locationId=${locationId}`).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; });
       const uiTree = buildPhoneLogTree({ calls: callsResp?.data?.calls || [], phoneNumbers: numbersResp?.data?.phoneNumbers || [] });
       return this.renderUITree(uiTree, 'Phone Log');
     } catch (error: any) {
@@ -1348,8 +1348,8 @@ const d=window.__MCP_APP_DATA__;if(d){document.querySelector('.fallback').innerH
     try {
       const locationId = this.ghlClient.getConfig().locationId;
       const [productsResp, ordersResp] = await Promise.all([
-        this.ghlClient.listProducts({ locationId, limit: 20, offset: 0 }).catch(() => ({ data: null })),
-        this.ghlClient.listOrders({ altId: locationId, altType: 'location', limit: 20 }).catch(() => ({ data: null })),
+        this.ghlClient.listProducts({ locationId, limit: 20, offset: 0 }).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; }),
+        this.ghlClient.listOrders({ altId: locationId, altType: 'location', limit: 20 }).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; }),
       ]);
       const uiTree = buildStoreFrontTree({
         products: (productsResp as any)?.data?.products || [],
@@ -1366,8 +1366,8 @@ const d=window.__MCP_APP_DATA__;if(d){document.querySelector('.fallback').innerH
     try {
       const locationId = this.ghlClient.getConfig().locationId;
       const [txResp, subResp] = await Promise.all([
-        this.ghlClient.listTransactions({ altId: locationId, altType: 'location', limit: 20 }).catch(() => ({ data: null })),
-        this.ghlClient.listSubscriptions({ altId: locationId, altType: 'location', limit: 20 }).catch(() => ({ data: null })),
+        this.ghlClient.listTransactions({ altId: locationId, altType: 'location', limit: 20 }).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; }),
+        this.ghlClient.listSubscriptions({ altId: locationId, altType: 'location', limit: 20 }).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; }),
       ]);
       const uiTree = buildPaymentDashboardTree({
         transactions: (txResp as any)?.data?.data || (txResp as any)?.data?.transactions || [],
@@ -1383,8 +1383,8 @@ const d=window.__MCP_APP_DATA__;if(d){document.querySelector('.fallback').innerH
   private async viewSocialMediaHub(): Promise<AppToolResult> {
     try {
       const [postsResp, accountsResp] = await Promise.all([
-        this.ghlClient.searchSocialPosts({ fromDate: new Date(Date.now() - 30 * 86400000).toISOString(), toDate: new Date().toISOString(), includeUsers: 'false', limit: '20' }).catch(() => ({ data: null })),
-        this.ghlClient.getSocialAccounts().catch(() => ({ data: null })),
+        this.ghlClient.searchSocialPosts({ fromDate: new Date(Date.now() - 30 * 86400000).toISOString(), toDate: new Date().toISOString(), includeUsers: 'false', limit: '20' }).catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; }),
+        this.ghlClient.getSocialAccounts().catch((e) => { console.error('[GHL-MCP] API call failed:', e); return { data: null }; }),
       ]);
       const uiTree = buildSocialMediaHubTree({
         posts: (postsResp as any)?.data?.posts || [],
