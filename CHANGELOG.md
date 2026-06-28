@@ -126,7 +126,6 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and [Sem
 - Claude Desktop and Cursor configuration snippets
 - Deployment guides for all platforms
 - Tool catalog with 520+ tools indexed by category
-- Signet integration guide (SIGNET.md)
 
 ---
 

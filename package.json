@@ -9,7 +9,6 @@
   "files": [
     "dist/",
     "README.md",
-    "SIGNET.md",
     "CHANGELOG.md",
     "package.json",
     ".env.example"
